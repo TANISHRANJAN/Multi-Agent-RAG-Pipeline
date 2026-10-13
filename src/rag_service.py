@@ -87,7 +87,7 @@ def _hybrid_search(query: str, top_k: int = 4, candidate_k: int = 10) -> list[di
     query_vector = _embedding_model.encode(
         [query], convert_to_numpy=True, normalize_embeddings=True
     ).astype("float32")
-    semantic_scores, semantic_ids = _faiss_index.search(query_vector, candidate_k)
+    _semantic_scores, semantic_ids = _faiss_index.search(query_vector, candidate_k)
 
     token_scores = _bm25_index.get_scores(_tokenize(query))
     keyword_ids = np.argsort(token_scores)[::-1][:candidate_k]

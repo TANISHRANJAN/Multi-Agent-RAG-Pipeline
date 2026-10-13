@@ -1,4 +1,5 @@
 import os
+
 import requests
 import streamlit as st
 
@@ -28,8 +29,8 @@ if question:
     with st.chat_message("user"):
         st.markdown(question)
 
-    with st.chat_message("assistant"):
-        with st.spinner("Searching support information and preparing an answer..."):
+    with st.chat_message("assistant"), st.spinner("Searching support information and preparing an answer..."):
+        #try:
             try:
                 response = requests.post(
                     f"{api_url}/query",

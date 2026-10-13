@@ -1,5 +1,5 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 from typing import Literal
 
 from fastapi import FastAPI, HTTPException
