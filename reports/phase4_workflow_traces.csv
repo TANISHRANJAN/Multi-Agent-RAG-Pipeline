@@ -1,0 +1,6 @@
+question,workflow_trace,retry_count,status
+How can I track my order?,planner: selected hybrid retrieval -> retrieval: found 4 chunk(s) for query='How can I track my order?' -> answer: generated grounded response -> validation: passed,0,complete
+What should I do if my item arrives damaged?,planner: selected hybrid retrieval -> retrieval: found 4 chunk(s) for query='What should I do if my item arrives damaged?' -> answer: generated grounded response -> validation: passed,0,complete
+How long do I have to return an item?,planner: selected hybrid retrieval -> retrieval: found 4 chunk(s) for query='How long do I have to return an item?' -> answer: generated grounded response -> validation: passed,0,complete
+Which payment methods are accepted?,planner: selected hybrid retrieval -> retrieval: found 4 chunk(s) for query='Which payment methods are accepted?' -> answer: generated grounded response -> validation: passed,0,complete
+How can I keep my account secure?,planner: selected hybrid retrieval -> retrieval: found 4 chunk(s) for query='How can I keep my account secure?' -> answer: generated grounded response -> validation: passed,0,complete

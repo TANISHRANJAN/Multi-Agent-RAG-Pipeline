@@ -1,0 +1,39 @@
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+
+# Secrets
+.env
+.env.*
+
+# Allow the example template
+!.env.example
+
+# Generated datasets and vector indexes
+data/processed/*
+!data/processed/.gitkeep
+
+data/vector_store/*
+!data/vector_store/.gitkeep
+
+# Model caches
+.cache/
+huggingface_cache/
+
+# Coverage and build output
+htmlcov/
+.coverage
+build/
+dist/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
